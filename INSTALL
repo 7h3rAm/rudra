@@ -1,0 +1,29 @@
+1. Pre-requisite libraries:
+  $ sudo apt-get install python-dev libfuzzy-dev libpcap-dev pkg-config libgtk2.0-dev libnet1-dev libpcre3 libpcre3-dev libgeoip-dev libtool python-cairosvg wkhtmltopdf
+
+2. Build pynids from ./depends/pynids-0.6.1/ (http://jon.oberheide.org/pynids/):
+  ./depends/pynids-0.6.1/$ python setup.py build
+  ./depends/pynids-0.6.1/$ python setup.py install
+
+3. Build YARA from ./depends/yara-1.4/:
+  (new versions are released at http://code.google.com/p/yara-project/downloads/list)
+  (For Ubuntu or other systems, these packages may be required: libpcre3 libpcre3-dev)
+
+  For Ubuntu or other systems, you may need to add the following path after building:
+  ./depends/yara-1.4/$ sudo echo "/usr/local/lib" >> /etc/ld.so.conf
+  ./depends/yara-1.4/$ sudo ldconfig
+
+  Build YARA Python from ./depends/yara-python-1.4/:
+  (new versions are released at http://code.google.com/p/yara-project/downloads/list)
+
+4. Build libemu from http://libemu.carnivore.it/:
+  Git version needs a change in the CFLAGS definition (line 13575 in libemu/configure file)
+  Add -Wno-unused-local-typedefs to CFLAGS and build as per steps mentioned on libmeu site (Thanks to a comment from Gagou on https://aur.archlinux.org/packages/libemu/?setlang=hr&comments=all)
+
+  Build pylibemu from https://github.com/buffer/pylibemu. If you encounter the libemu.so.2 importerror, please follow steps mentioned here: https://github.com/buffer/thug/issues/28 (thanks @buffer)
+
+5. Install aayudh (https://github.com/7h3rAm/aayudh.git)
+
+6. Install pypi packages:
+  $ sudo pip install -r requirements.pip
+
