@@ -1,0 +1,193 @@
+{
+  ".arch": {
+    "description": "Alpha-architecture section"
+  },
+
+  ".bss": {
+    "description": "Uninitialized Data Section"
+  },
+
+  ".BSS": {
+    "description": "Uninitialized Data Section"
+  },
+
+  ".code": {
+    "description": "Code Section"
+  },
+
+  ".cormeta": {
+    "description": "CLR Metadata Section"
+  },
+
+  ".CRT": {
+    "description": "Initialized Data Section (C RunTime)"
+  },
+
+  ".data": {
+    "description": "Data Section"
+  },
+
+  ".DATA": {
+    "description": "Data Section"
+  },
+
+  ".data1": {
+    "description": "Data Section"
+  },
+
+  ".debug": {
+    "description": "Debug info Section"
+  },
+
+  ".debug": {
+    "description": "Debug info Section"
+  },
+
+  ".debug": {
+    "description": "Debug info Section"
+  },
+
+  ".debug": {
+    "description": "Debug info Section"
+  },
+
+  ".debug": {
+    "description": "Debug info Section"
+  },
+
+  ".didata": {
+    "description": "Delay Import Section"
+  },
+
+  ".edata": {
+    "description": "Export Data Section"
+  },
+
+  ".fasm": {
+    "description": "FASM flat Section"
+  },
+
+  ".flat": {
+    "description": "FASM flat Section"
+  },
+
+  ".idata": {
+    "description": "Initialized Data Section (Borland)"
+  },
+
+  ".idlsym": {
+    "description": "IDL Attributes"
+  },
+
+  ".itext": {
+    "description": "Code Section (Borland)"
+  },
+
+  ".ndata": {
+    "description": "Nullsoft Installer section"
+  },
+
+  ".pdata": {
+    "description": "Exception Handling Functions Section (PDATA records)"
+  },
+
+  ".rdata": {
+    "description": "Read-only Data Section (Borland)"
+  },
+
+  ".reloc": {
+    "description": "Relocations Section"
+  },
+
+  ".rodata": {
+    "description": "Read-only Data Section"
+  },
+
+  ".rsrc": {
+    "description": "Resource section"
+  },
+
+  ".sbss": {
+    "description": "GP-relative Uninitialized Data Section"
+  },
+
+  ".sdata": {
+    "description": "GP-relative Initialized Data Section"
+  },
+
+  ".srdata": {
+    "description": "GP-relative Read-only Data Section"
+  },
+
+  ".sxdata": {
+    "description": "Registered Exception Handlers Section"
+  },
+
+  ".text": {
+    "description": "Code Section"
+  },
+
+  ".text1": {
+    "description": "Code Section"
+  },
+
+  ".textbss": {
+    "description": "Section used by incremental linking"
+  },
+
+  ".tls": {
+    "description": "Thread Local Storage Section"
+  },
+
+  ".tls": {
+    "description": "Thread Local Storage Section"
+  },
+
+  ".udata": {
+    "description": "Uninitialized Data Section"
+  },
+
+  ".vsdata": {
+    "description": "GP-relative Initialized Data"
+  },
+
+  ".xdata": {
+    "description": "Exception Information Section"
+  },
+
+  "BSS": {
+    "description": "Uninitialized Data Section (Borland)"
+  },
+
+  "CODE": {
+    "description": "Code Section (Borland)"
+  },
+
+  "DATA": {
+    "description": "Data Section (Borland)"
+  },
+
+  "edata": {
+    "description": "Export Data Section"
+  },
+
+  "idata": {
+    "description": "Initialized Data Section (C RunTime)"
+  },
+
+  "INIT": {
+    "description": "INIT section (drivers)"
+  },
+
+  "PAGE": {
+    "description": "PAGE section (drivers)"
+  },
+
+  "rdata": {
+    "description": "Read-only Data Section"
+  },
+
+  "sdata": {
+    "description": "Initialized Data Section"
+  }
+}

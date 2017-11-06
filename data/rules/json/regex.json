@@ -1,0 +1,55 @@
+{
+  "Red Pill": {
+    "pattern": "\\x0f\\x01\\x0d\\x00\\x00\\x00\\x00\\xc3",
+    "description": "Red Pill",
+    "score": null
+  },
+
+  "VirtualPc trick": {
+    "pattern": "\\x0f\\x3f\\x07\\x0b",
+    "description": "VirtualPc trick",
+    "score": null
+  },
+
+  "VMware trick": {
+    "pattern": "VMXh",
+    "description": null,
+    "score": null
+  },
+
+  "VMCheck.dll": {
+    "pattern": "\\x45\\xC7\\x00\\x01",
+    "description": "VMware trick",
+    "score": null
+  },
+
+  "VMCheck.dll for VirtualPC": {
+    "pattern": "\\x0f\\x3f\\x07\\x0b\\xc7\\x45\\xfc\\xff\\xff\\xff\\xff",
+    "description": "VMCheck.dll for VirtualPC",
+    "score": null
+  },
+
+  "Xen": {
+    "pattern": "XenVMM",
+    "description": "Xen",
+    "score": null
+  },
+
+  "Bochs & QEmu CPUID Trick": {
+    "pattern": "\\x44\\x4d\\x41\\x63",
+    "description": "Bochs & QEmu CPUID Trick",
+    "score": null
+  },
+
+  "Torpig VMM Trick": {
+    "pattern": "\\xE8\\xED\\xFF\\xFF\\xFF\\x25\\x00\\x00\\x00\\xFF\\x33\\xC9\\x3D\\x00\\x00\\x00\\x80\\x0F\\x95\\xC1\\x8B\\xC1\\xC3",
+    "description": "Torpig VMM Trick",
+    "score": null
+  },
+
+  "Torpig (UPX) VMM Trick": {
+    "pattern": "\\x51\\x51\\x0F\\x01\\x27\\x00\\xC1\\xFB\\xB5\\xD5\\x35\\x02\\xE2\\xC3\\xD1\\x66\\x25\\x32\\xBD\\x83\\x7F\\xB7\\x4E\\x3D\\x06\\x80\\x0F\\x95\\xC1\\x8B\\xC1\\xC3",
+    "description": "Torpig (UPX) VMM Trick",
+    "score": null
+  }
+}

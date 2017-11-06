@@ -1,0 +1,233 @@
+{
+  ".aspack": {
+    "description": "Aspack packer"
+  },
+
+  ".adata": {
+    "description": "Aspack packer/Armadillo packer"
+  },
+
+  "ASPack": {
+    "description": "Aspack packer"
+  },
+
+  ".ASPack": {
+    "description": "ASPAck Protector"
+  },
+
+  ".ccg": {
+    "description": "CCG Packer (Chinese Packer)"
+  },
+
+  "BitArts": {
+    "description": "Crunch 2.0 Packer"
+  },
+
+  "DAStub": {
+    "description": "DAStub Dragon Armor protector"
+  },
+
+  "!EPack": {
+    "description": "Epack packer"
+  },
+
+  "kkrunchy": {
+    "description": "kkrunchy Packer"
+  },
+
+  ".mackt": {
+    "description": "ImpRec-created section"
+  },
+
+  ".MaskPE": {
+    "description": "MaskPE Packer"
+  },
+
+  "MEW": {
+    "description": "MEW packer"
+  },
+
+  ".MPRESS1": {
+    "description": "Mpress Packer"
+  },
+
+  ".MPRESS2": {
+    "description": "Mpress Packer"
+  },
+
+  ".neolite": {
+    "description": "Neolite Packer"
+  },
+
+  ".neolit": {
+    "description": "Neolite Packer"
+  },
+
+  ".nsp1": {
+    "description": "NsPack packer"
+  },
+
+  ".nsp0": {
+    "description": "NsPack packer"
+  },
+
+  ".nsp2": {
+    "description": "NsPack packer"
+  },
+
+  "nsp1": {
+    "description": "NsPack packer"
+  },
+
+  "nsp0": {
+    "description": "NsPack packer"
+  },
+
+  "nsp2": {
+    "description": "NsPack packer"
+  },
+
+  ".packed": {
+    "description": "RLPack Packer (first section)"
+  },
+
+  "pebundle": {
+    "description": "PEBundle Packer"
+  },
+
+  "PEBundle": {
+    "description": "PEBundle Packer"
+  },
+
+  "PEC2TO": {
+    "description": "PECompact packer"
+  },
+
+  "PEC2": {
+    "description": "PECompact packer"
+  },
+
+  "pec1": {
+    "description": "PECompact packer"
+  },
+
+  "pec2": {
+    "description": "PECompact packer"
+  },
+
+  "PEC2MO": {
+    "description": "PECompact packer"
+  },
+
+  "PELOCKnt": {
+    "description": "PELock Protector"
+  },
+
+  ".perplex": {
+    "description": "Perplex PE-Protector"
+  },
+
+  "PESHiELD": {
+    "description": "PEShield Packer"
+  },
+
+  ".petite": {
+    "description": "Petite Packer"
+  },
+
+  "ProCrypt": {
+    "description": "ProCrypt Packer"
+  },
+
+  ".RLPack": {
+    "description": "RLPack Packer"
+  },
+
+  "RCryptor": {
+    "description": "RPCrypt Packer"
+  },
+
+  ".RPCrypt": {
+    "description": "RPCrypt Packer"
+  },
+
+  ".sforce3": {
+    "description": "StarForce Protection"
+  },
+
+  ".spack": {
+    "description": "Simple Pack (bybagie)"
+  },
+
+  ".svkp": {
+    "description": "SVKP packer"
+  },
+
+  "Themida": {
+    "description": "Themida Packer"
+  },
+
+  ".Themida": {
+    "description": "Themida Packer"
+  },
+
+  ".packed": {
+    "description": "Unknown Packer"
+  },
+
+  ".Upack": {
+    "description": "Upack packer"
+  },
+
+  ".ByDwing": {
+    "description": "Upack Packer"
+  },
+
+  "UPX": {
+    "description": " UPX packer"
+  },
+
+  "UPX0": {
+    "description": "UPX packer"
+  },
+
+  "UPX1": {
+    "description": "UPX packer"
+  },
+
+  "UPX2": {
+    "description": "UPX packer"
+  },
+
+  ".vmp0": {
+    "description": "VMProtect packer"
+  },
+
+  ".vmp1": {
+    "description": "VMProtect packer"
+  },
+
+  ".vmp2": {
+    "description": "VMProtect packer"
+  },
+
+  "VProtect": {
+    "description": "Vprotect Packer"
+  },
+
+  "WinLicen": {
+    "description": "WinLicense (Themida) Protector"
+  },
+
+  ".WWPACK": {
+    "description": "WWPACK Packer"
+  },
+
+  ".yP": {
+    "description": "Y0da Protector"
+  },
+
+  ".y0da": {
+    "description": "Y0da Protector"
+  }
+}

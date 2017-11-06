@@ -1,0 +1,2177 @@
+{
+  "OpenProcess": {
+    "syscallid": null,
+    "description": "Opens an existing local process object.",
+      "type": ["suspicious"],
+      "parent": "kernel32.dll",
+      "score": null
+  },
+
+  "VirtualAllocEx": {
+    "syscallid": null,
+    "description": "Reserves, commits, or changes the state of a region of memory within the virtual address space of a specified process. The function initializes the memory it allocates to zero.",
+      "type": ["suspicious"],
+      "parent": "kernel32.dll",
+      "score": null
+  },
+
+  "ReadProcessMemory": {
+    "syscallid": null,
+    "description": "Reads data from an area of memory in a specified process. The entire area to be read must be accessible or the operation fails.",
+      "type": ["suspicious"],
+      "parent": "kernel32.dll",
+      "score": null
+  },
+
+  "CreateProcess": {
+    "syscallid": null,
+    "description": "Creates a new process and its primary thread. The new process runs in the security context of the calling process.",
+      "type": ["suspicious"],
+      "parent": "kernel32.dll",
+      "score": null
+  },
+
+  "HttpSendRequest": {
+    "syscallid": null,
+    "description": "Sends the specified request to the HTTP server, allowing callers to send extra data beyond what is normally passed to HttpSendRequestEx.",
+      "type": ["suspicious"],
+      "parent": "Wininet.dll",
+      "score": null
+  },
+
+  "InternetReadFile": {
+    "syscallid": null,
+    "description": "Reads data from a handle opened by the InternetOpenUrl, FtpOpenFile, or HttpOpenRequest function.",
+      "type": ["suspicious"],
+      "parent": "Wininet.dll",
+      "score": null
+  },
+
+  "InternetConnect": {
+    "syscallid": null,
+    "description": "Opens an File Transfer Protocol (FTP) or HTTP session for a given site.",
+      "type": ["suspicious"],
+      "parent": "Wininet.dll",
+      "score": null
+  },
+
+  "CreateService": {
+    "syscallid": null,
+    "description": "Creates a service object and adds it to the specified service control manager database.",
+      "type": ["suspicious"],
+      "parent": "Advapi32.dll",
+      "score": null
+  },
+
+  "StartService": {
+    "syscallid": null,
+    "description": "Starts a service.",
+      "type": ["suspicious"],
+      "parent": "Advapi32.dll",
+      "score": null
+  },
+
+  "CallNextHookEx": {
+    "syscallid": null,
+    "description": "Passes the hook information to the next hook procedure in the current hook chain.",
+      "type": ["suspicious"],
+      "parent": "user32.dll",
+      "score": null
+  },
+
+  "CreateRemoteThread": {
+    "syscallid": null,
+    "description": "Creates a thread that runs in the virtual address space of another process.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "DeleteCriticalSection": {
+    "syscallid": null,
+    "description": "Releases all resources used by an unowned critical section object.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "DuplicateHandle": {
+    "syscallid": null,
+    "description": "Duplicates an object handle.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "EnterCriticalSection": {
+    "syscallid": null,
+    "description": "Waits for ownership of the specified critical section object.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "ExitProcess": {
+    "syscallid": null,
+    "description": "Ends the calling process and all its threads.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "FreeEnvironmentStringsA": {
+    "syscallid": null,
+    "description": "Clear environment variables on system.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetAsyncKeyState": {
+    "syscallid": null,
+    "description": "Traps windows keyboard events (Keylogger).",
+    "type": ["suspicious"],
+    "parent": "user32.dll",
+    "score": null
+  },
+
+  "GetCommandLineA": {
+    "syscallid": null,
+    "description": "Retrieves the command-line string for the current process.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetCurrentProcess": {
+    "syscallid": null,
+    "description": "Retrieves a pseudo handle for the current process.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetCurrentProcessId": {
+    "syscallid": null,
+    "description": "Retrieves the process identifier of the calling process.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetCurrentThreadId": {
+    "syscallid": null,
+    "description": "Retrieves the thread identifier of the calling thread.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetEnvironmentStrings": {
+    "syscallid": null,
+    "description": "Retrieves the environment variables for the current process.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetForegroundWindow": {
+    "syscallid": null,
+    "description": "Retrieves a handle to the foreground window.",
+    "type": ["suspicious"],
+    "parent": "user32.dll",
+    "score": null
+  },
+
+  "gethostbyname": {
+    "syscallid": null,
+    "description": "Retrieves hostname info from a host database.",
+    "type": ["suspicious"],
+    "parent": "ws2_32.dll",
+    "score": null
+  },
+
+  "GetKeyboardType": {
+    "syscallid": null,
+    "description": "Retrieves information about the current keyboard.",
+    "type": ["suspicious"],
+    "parent": "user32.dll",
+    "score": null
+  },
+
+  "GetModuleFileNameA": {
+    "syscallid": null,
+    "description": "Retrieves the fully qualified path for the file that contains the specified module.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetModuleHandleA": {
+    "syscallid": null,
+    "description": "Retrieves a module handle for the specified module.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetPrivateProfileIntA": {
+    "syscallid": null,
+    "description": "[UNDOCUMENTED]] API seen in malware.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetPrivateProfileStringA": {
+    "syscallid": null,
+    "description": "Retrieves a string from the specified section in an initialization file.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetProcAddress": {
+    "syscallid": null,
+    "description": "Retrieves the address of an exported function or variable from DLL.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetStartupInfoA": {
+    "syscallid": null,
+    "description": "Receives the startup information.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetStdHandle": {
+    "syscallid": null,
+    "description": "Retrieves a handle to the specified I/O device.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetSystemTimeAsFileTime": {
+    "syscallid": null,
+    "description": "Retrieves the current system date and time.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetThreadContext": {
+    "syscallid": null,
+    "description": "Retrieves the context of the specified thread.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetWindowThreadProcessId": {
+    "syscallid": null,
+    "description": "Retrieves the identifier of the thread that created the specified window.",
+    "type": ["suspicious", "antidebug"],
+    "parent": "user32.dll",
+    "score": null
+  },
+
+  "HeapAlloc": {
+    "syscallid": null,
+    "description": "Allocates a block of memory from a heap.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "HeapCreate": {
+    "syscallid": null,
+    "description": "Creates a private heap object that can be used by the calling process.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "HeapDestroy": {
+    "syscallid": null,
+    "description": "Destroys the specified heap object.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "HeapFree": {
+    "syscallid": null,
+    "description": "Frees a memory block allocated from a heap by the HeapAlloc/HeapReAlloc.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "HeapReAlloc": {
+    "syscallid": null,
+    "description": "Reallocates a block of memory from a heap.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "HeapSize": {
+    "syscallid": null,
+    "description": "Retrieves the size of a memory block allocated from a heap.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "HeapValidate": {
+    "syscallid": null,
+    "description": "Validates the specified heap.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "LeaveCriticalSection": {
+    "syscallid": null,
+    "description": "Releases ownership of the specified critical section object.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "LoadAndCallDriver": {
+    "syscallid": null,
+    "description": "API seen in rootkit for loading custom driver.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "LoadLibraryA": {
+    "syscallid": null,
+    "description": "Loads the specified module into the address space of the calling process.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "NtOpenKeyHook": {
+    "syscallid": null,
+    "description": "Rootkits using this to hook registry functions.",
+    "type": ["suspicious"],
+    "parent": "ntdll.dll",
+    "score": null
+  },
+
+  "NtQueryDirectoryFile": {
+    "syscallid": null,
+    "description": "Enumerate files or directories placed into directory.",
+    "type": ["suspicious"],
+    "parent": "ntdll.dll",
+    "score": null
+  },
+
+  "NtSetSystemInformation": {
+    "syscallid": null,
+    "description": "Set some unaccessable KernelMode variables.",
+    "type": ["suspicious"],
+    "parent": "ntdll.dll",
+    "score": null
+  },
+
+  "RegSetValueExA": {
+    "syscallid": null,
+    "description": "Sets the data and type of a specified value under a registry key.",
+    "type": ["suspicious"],
+    "parent": "advapi32.dll",
+    "score": null
+  },
+
+  "RtlUnwind": {
+    "syscallid": null,
+    "description": "Initiates an unwind of procedure call frames.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "SetConsoleCtrlHandler": {
+    "syscallid": null,
+    "description": "Adds/removes HandlerRoutine function from the list of handlers.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "SetFileAttributesA": {
+    "syscallid": null,
+    "description": "Sets the attributes for a file or directory.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "SetHandleCount": {
+    "syscallid": null,
+    "description": "Sets the number of file handles available to a process.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "SetWindowsHookEx": {
+    "syscallid": null,
+    "description": "Installs an application-defined hook procedure into a hook chain.",
+    "type": ["suspicious"],
+    "parent": "user32.dll",
+    "score": null
+  },
+
+  "ShellExecute": {
+    "syscallid": null,
+    "description": "Performs an operation on a specified file.",
+    "type": ["suspicious"],
+    "parent": "shell32.dll",
+    "score": null
+  },
+
+  "UnhandledExceptionFilter": {
+    "syscallid": null,
+    "description": "Passes unhandled exceptions to the debugger.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "VirtualAlloc": {
+    "syscallid": null,
+    "description": "Allocate memory in the address space of another process.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "VirtualFree": {
+    "syscallid": null,
+    "description": "To free memory allocated in another process.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "VirtualProtect": {
+    "syscallid": null,
+    "description": "To change the access protection of any process.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "VirtualQuery": {
+    "syscallid": null,
+    "description": "Retrieves information about a range of pages in the virtual address space.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "WinExec": {
+    "syscallid": null,
+    "description": "Runs the specified application.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "WriteFile": {
+    "syscallid": null,
+    "description": "Writes data to the specified file or I/O device.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "WritePrivateProfileStringA": {
+    "syscallid": null,
+    "description": "Copies a string into the specified section of an initialization file.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "WriteProcessMemory": {
+    "syscallid": null,
+    "description": "Writes data to an area of memory in a specified process.",
+    "type": ["suspicious"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "WSACleanup": {
+    "syscallid": null,
+    "description": "Terminates Windows Sockets operations for all threads.",
+    "type": ["suspicious"],
+    "parent": "ws2_32.dll",
+    "score": null
+  },
+
+  "WSAStartup": {
+    "syscallid": null,
+    "description": "Initiates use of the Winsock DLL by a process.",
+    "type": ["suspicious"],
+    "parent": "ws2_32.dll",
+    "score": null
+  },
+
+  "DeviceIoControl": {
+    "syscallid": null,
+    "description": "Sends a control code directly to a specified device driver.",
+    "type": ["antivm"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "DxDiagSystemInfo": {
+    "syscallid": null,
+    "description": "Get Sysinfo from diagnostic tool.",
+    "type": ["antivm"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "FindWindowExA": {
+    "syscallid": null,
+    "description": "Retrieves a handle to a specified window.",
+    "type": ["antivm"],
+    "parent": "user32.dll",
+    "score": null
+  },
+
+  "GetAdaptersAddresses": {
+    "syscallid": null,
+    "description": "Get MAC addresses of system.",
+    "type": ["antivm"],
+    "parent": "Iphlpapi.dll",
+    "score": null
+  },
+
+  "GetCursorPos": {
+    "syscallid": null,
+    "description": "Retrieves the position of the mouse cursor, in screen coordinates.",
+    "type": ["antivm"],
+    "parent": "user32.dll",
+    "score": null
+  },
+
+  "GetEnvironmentStrings": {
+    "syscallid": null,
+    "description": "Retrieves the environment variables for the current process.",
+    "type": ["antivm"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetFileAttributes": {
+    "syscallid": null,
+    "description": "Retrieves file system attributes for a specified file or directory.",
+    "type": ["antivm"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetLocalTime": {
+    "syscallid": null,
+    "description": "Retrieves the current local date and time.",
+    "type": ["antivm"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetSystemInfo": {
+    "syscallid": null,
+    "description": "Retrieves information about the current system.",
+    "type": ["antivm"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetSystemMetrics": {
+    "syscallid": null,
+    "description": "Retrieves the specified system metric or system configuration setting.",
+    "type": ["antivm"],
+    "parent": "user32.dll",
+    "score": null
+  },
+
+  "GetSystemTime": {
+    "syscallid": null,
+    "description": "Retrieves the current system date and time.",
+    "type": ["antivm"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetSystemTimeAsFileTime": {
+    "syscallid": null,
+    "description": "Retrieves the current system date and time.",
+    "type": ["antivm"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetTickCount": {
+    "syscallid": null,
+    "description": "Retrieves the number of milliseconds that have elapsed since the system was started.",
+    "type": ["antivm"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetVolumeInformation": {
+    "syscallid": null,
+    "description": "Retrieves information about the file system and volume.",
+    "type": ["antivm"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GlobalMemoryStatus": {
+    "syscallid": null,
+    "description": "Retrieves information about the system's current usage of both physical and virtual memory.",
+    "type": ["antivm"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "IsRunningInsideVirtualMachine": {
+    "syscallid": null,
+    "description": "Detect if program running in VirtualPC.",
+    "type": ["antivm"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "LdrGetProcedureAddress": {
+    "syscallid": null,
+    "description": "Get address of a function.",
+    "type": ["antivm"],
+    "parent": "ntdll.dll",
+    "score": null
+  },
+
+  "MessageBoxEx": {
+    "syscallid": null,
+    "description": "Creates, displays, and operates a message box.",
+    "type": ["antivm"],
+    "parent": "user32.dll",
+    "score": null
+  },
+
+  "NetWkstaGetInfo": {
+    "syscallid": null,
+    "description": "Get information about the configuration of a machine.",
+    "type": ["antivm"],
+    "parent": "Netapi32.dll",
+    "score": null
+  },
+
+  "NtDelayExecution": {
+    "syscallid": null,
+    "description": "Delay the execution of a program.",
+    "type": ["antivm"],
+    "parent": "ntdll.dll",
+    "score": null
+  },
+
+  "NtOpenKey": {
+    "syscallid": null,
+    "description": "This routine opens an existing registry key.",
+    "type": ["antivm"],
+    "parent": "ntdll.dll",
+    "score": null
+  },
+
+  "NtQueryPerformanceCounter": {
+    "syscallid": null,
+    "description": "Returns the current value of a performance counter.",
+    "type": ["antivm"],
+    "parent": "ntdll.dll",
+    "score": null
+  },
+
+  "NtQuerySystemInformation": {
+    "syscallid": null,
+    "description": "Retrieves the specified system information.",
+    "type": ["antivm"],
+    "parent": "ntdll.dll",
+    "score": null
+  },
+
+  "NtQuerySystemTime": {
+    "syscallid": null,
+    "description": "Retrieves the current system time.",
+    "type": ["antivm"],
+    "parent": "ntdll.dll",
+    "score": null
+  },
+
+  "NtSetTimer": {
+    "syscallid": null,
+    "description": "Sets the timer.",
+    "type": ["antivm"],
+    "parent": "ntdll.dll",
+    "score": null
+  },
+
+  "NtSuspendThread": {
+    "syscallid": null,
+    "description": "Suspend count for ThreadHandle thread before function call.",
+    "type": ["antivm"],
+    "parent": "ntdll.dll",
+    "score": null
+  },
+
+  "WaitforSingleObject": {
+    "syscallid": null,
+    "description": "It waits for a specified time.",
+    "type": ["antivm"],
+    "parent": "ntdll.dll",
+    "score": null
+  },
+
+  "Process32First": {
+    "syscallid": null,
+    "description": "Retrieves information about the first process encountered in a system snapshot.",
+    "type": ["antivm", "antidebug"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "Process32Next": {
+    "syscallid": null,
+    "description": "Retrieves information about the next process recorded in a system snapshot.",
+    "type": ["antivm", "antidebug"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "PspCreateProcessNotify": {
+    "syscallid": null,
+    "description": "Anti-VM - deregister all existing process callbacks.",
+    "type": ["antivm"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "PsSetCreateProcessNotifyRoutine": {
+    "syscallid": null,
+    "description": "test.",
+    "type": ["antivm"],
+    "parent": "ntdll.dll",
+    "score": null
+  },
+
+  "RegQueryValueEx": {
+    "syscallid": null,
+    "description": "Retrieves registry key value.",
+    "type": ["antivm"],
+    "parent": "Advapi32.dll",
+    "score": null
+  },
+
+  "RegQueryValueExA": {
+    "syscallid": null,
+    "description": "Retrieves registry key value.",
+    "type": ["antivm"],
+    "parent": "Advapi32.dll",
+    "score": null
+  },
+
+  "RegQueryValueExW": {
+    "syscallid": null,
+    "description": "Retrieves registry key value.",
+    "type": ["antivm"],
+    "parent": "Advapi32.dll",
+    "score": null
+  },
+
+  "RegEnumKeyExW": {
+    "syscallid": null,
+    "description": "Enumerates the subkeys of the specified open registry key.",
+    "type": ["antivm"],
+    "parent": "Advapi32.dll",
+    "score": null
+  },
+
+  "SetTimer": {
+    "syscallid": null,
+    "description": "Creates a timer with the specified time-out value.",
+    "type": ["antivm"],
+    "parent": "user32.dll",
+    "score": null
+  },
+
+  "SetupDiGetClassDevs": {
+    "syscallid": null,
+    "description": "Request device information elements for a local computer.",
+    "type": ["antivm"],
+    "parent": "Setupapi.dll",
+    "score": null
+  },
+
+  "SetupDiGetClassDevsA": {
+    "syscallid": null,
+    "description": "Request device information elements for a local computer.",
+    "type": ["antivm"],
+    "parent": "Setupapi.dll",
+    "score": null
+  },
+
+  "SetupDiGetClassDevsW": {
+    "syscallid": null,
+    "description": "Request device information elements for a local computer.",
+    "type": ["antivm"],
+    "parent": "Setupapi.dll",
+    "score": null
+  },
+
+  "SetupDiGetDeviceRegistryProperty": {
+    "syscallid": null,
+    "description": "Retrieves a specified Plug and Play device property.",
+    "type": ["antivm"],
+    "parent": "Setupapi.dll",
+    "score": null
+  },
+
+  "SetupDiGetEnumDeviceInfo": {
+    "syscallid": null,
+    "description": "Specifies a device information element in a device information set.",
+    "type": ["antivm"],
+    "parent": "Setupapi.dll",
+    "score": null
+  },
+
+  "SetWindowsHookEx": {
+    "syscallid": null,
+    "description": "Installs an application-defined hook procedure into a hook chain.",
+    "type": ["antivm"],
+    "parent": "user32.dll",
+    "score": null
+  },
+
+  "SetWindowsHookExA": {
+    "syscallid": null,
+    "description": "Installs an application-defined hook procedure into a hook chain.",
+    "type": ["antivm"],
+    "parent": "user32.dll",
+    "score": null
+  },
+
+  "SetWindowsHookExW": {
+    "syscallid": null,
+    "description": "Installs an application-defined hook procedure into a hook chain.",
+    "type": ["antivm"],
+    "parent": "user32.dll",
+    "score": null
+  },
+
+  "Sleep": {
+    "syscallid": null,
+    "description": "Sleeps execution of program for specified time.",
+    "type": ["antivm"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "SleepEx": {
+    "syscallid": null,
+    "description": "Sleeps execution of program for specified time.",
+    "type": ["antivm"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "UnhookWindowsHookEx": {
+    "syscallid": null,
+    "description": "Removes a hook procedure installed in a hook chain.",
+    "type": ["antivm"],
+    "parent": "user32.dll",
+    "score": null
+  },
+
+  "WaitForMultipleObjects": {
+    "syscallid": null,
+    "description": "Waits the execution of program for specified time.",
+    "type": ["antivm"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "WNetGetProviderName": {
+    "syscallid": null,
+    "description": "Obtains the provider name for a specific type of network.",
+    "type": ["antivm"],
+    "parent": "Mpr.dll",
+    "score": null
+  },
+
+  "ZwDelayExecution": {
+    "syscallid": null,
+    "description": "Delays the execution of program for specified time.",
+    "type": ["antivm"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "ZwUnmapViewOfSection": {
+    "syscallid": null,
+    "description": "Unmaps a view of a section from the virtual address space of a process.",
+    "type": ["antivm"],
+    "parent": "ntdll.dll",
+    "score": null
+  },
+
+  "timeGetTime": {
+    "syscallid": null,
+    "description": "Retrieves the system time, in milliseconds.",
+    "type": ["antivm"],
+    "parent": "Winmm.dll",
+    "score": null
+  },
+
+  "GetProductInfo": {
+    "syscallid": null,
+    "description": "Retrieves the product type for the operating system.",
+    "type": ["antivm"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "GetVersionEx": {
+    "syscallid": null,
+    "description": "Get the version of an operating system.",
+    "type": ["antivm"],
+    "parent": "kernel32.dll",
+    "score": null
+  },
+
+  "FindWindow": {
+    "syscallid": 0,
+    "description": "Retrieves a handle to the top-level window whose class name and window name match the specified strings. This function does not search child windows. This function does not perform a case-sensitive search.",
+    "type": ["antidebug"],
+    "parent": "user32.dll",
+    "score": 0
+  },
+
+  "GetWindowThreadProcessId": {
+    "syscallid": 0,
+    "description": "Retrieves the identifier of the thread that created the specified window and, optionally, the identifier of the process that created the window.",
+    "type": ["antidebug"],
+    "parent": "user32.lib",
+    "score": 0
+  },
+
+  "Process32First": {
+    "syscallid": 0,
+    "description": "Retrieves information about the first process encountered in a system snapshot.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "Process32Next": {
+    "syscallid": 0,
+    "description": "Retrieves information about the next process recorded in a system snapshot.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "TerminateProcess": {
+    "syscallid": 0,
+    "description": "Terminates the specified process and all of its threads.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "UnhandledExceptionFilter": {
+    "syscallid": 0,
+    "description": "An application-defined function that passes unhandled exceptions to the debugger, if the process is being debugged. Otherwise, it optionally displays an Application Error message box and causes the exception handler to be executed. This function can be called only from within the filter expression of an exception handler.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "ZwQueryInformationFile": {
+    "syscallid": 0,
+    "description": "The ZwQueryInformationFile routine returns various kinds of information about a file object.",
+    "type": ["antidebug"],
+    "parent": "ntoskrnl.exe",
+    "score": 0
+  },
+
+  "AddVectoredExceptionHandler": {
+    "syscallid": 0,
+    "description": "Calls the exception handler.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "BlockInput": {
+    "syscallid": 0,
+    "description": "Blocks keyboard and mouse input events from reaching applications.",
+    "type": ["antidebug"],
+    "parent": "user32.dll",
+    "score": 0
+  },
+
+  "CheckRemoteDebugger": {
+    "syscallid": 0,
+    "description": "Determines whether the specified process is being debugged.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "CheckRemoteDebuggerPresent": {
+    "syscallid": 0,
+    "description": "Determines whether the specified process is being debugged.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "ContinueDebugEvent": {
+    "syscallid": 0,
+    "description": "Enables a debugger to continue a thread that previously reported a debugging event.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "CreateToolhelp32Snapshot": {
+    "syscallid": 0,
+    "description": "Takes a snapshot of the specified processes, as well as the heaps, modules, and threads.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "DbgBreakPoint": {
+    "syscallid": 0,
+    "description": "DbgBreakPoint routine breaks into the kernel debugger.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "DbgSetDebugFilterState": {
+    "syscallid": 0,
+    "description": "Anti-Debugging technique.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "DbgUIConnectToDbg": {
+    "syscallid": 0,
+    "description": "Write debugging capabilities inside a native application.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "DbgUiContinue": {
+    "syscallid": 0,
+    "description": "Continue the thread's execution after DebugUI services access violation.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "DebugActiveProcess": {
+    "syscallid": 0,
+    "description": "Enables a debugger to attach to an active process and debug it.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "DebugActiveProcessStop": {
+    "syscallid": 0,
+    "description": "Stops the debugger from debugging the specified process.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "DebugBreak": {
+    "syscallid": 0,
+    "description": "Calling thread to signal the debugger to handle the exception.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "DebugBreakProcess": {
+    "syscallid": 0,
+    "description": "Calling thread to signal the debugger to handle the exception.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "DebugSetProcessKillOnExit": {
+    "syscallid": 0,
+    "description": "Sets the action to be performed when the calling thread exits.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "DetourAttach": {
+    "syscallid": 0,
+    "description": "API Hooking with Detours.",
+    "type": ["antidebug"],
+    "parent": "detoured.dll",
+    "score": 0
+  },
+
+  "DetourCreateProcessWithDLL": {
+    "syscallid": 0,
+    "description": "Inject detours in program.",
+    "type": ["antidebug"],
+    "parent": "detoured.dll",
+    "score": 0
+  },
+
+  "EnumSystemLocalesA": {
+    "syscallid": 0,
+    "description": "Check system locale environment.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "__except__handler3": {
+    "syscallid": 0,
+    "description": "Exception handler triggered.",
+    "type": ["antidebug"],
+    "parent": "msvcrt.dll",
+    "score": 0
+  },
+
+  "_except_handler4": {
+    "syscallid": 0,
+    "description": "Exception handler triggered.",
+    "type": ["antidebug"],
+    "parent": "msvcrt.dll",
+    "score": 0
+  },
+
+  "FatalExit": {
+    "syscallid": 0,
+    "description": "Transfers execution control to the debugger.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "GenerateConsoleCtrlEvent": {
+    "syscallid": 0,
+    "description": "Signal to a console process group that shares the console associated with the calling process.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "GetLastError": {
+    "syscallid": 0,
+    "description": "Retrieves the calling thread's last-error code value.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "GetThreadContext": {
+    "syscallid": 0,
+    "description": "Retrieves the context of the specified thread.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "__invoke_watson": {
+    "syscallid": 0,
+    "description": "Triggers Watson debugger.",
+    "type": ["antidebug"],
+    "parent": "msvcr90.dll",
+    "score": 0
+  },
+
+  "NtCreateThreadEx": {
+    "syscallid": 0,
+    "description": "[UNDOCUMENTED] Allows remote thread execution across session boundaries (DLL Injection).",
+    "type": ["antidebug"],
+    "parent": null,
+    "score": 0
+  },
+
+  "IsDebugged": {
+    "syscallid": 0,
+    "description": "Gets a value that indicates whether the service is debugged.",
+    "type": ["antidebug"],
+    "parent": "Microsoft.XLANGs.Engine.dll",
+    "score": 0
+  },
+
+  "IsDebuggerPresent": {
+    "syscallid": 0,
+    "description": "Checks if calling process is being debugged by a user-mode debugger.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "K32GetProcessMemoryInfo": {
+    "syscallid": 0,
+    "description": "Retrieves information about the memory usage of the specified process.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "KdCheckForDebugBreak": {
+    "syscallid": 0,
+    "description": "The target machine periodically poll for break-in message from the host debugger.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "KdDebuggerEnabled": {
+    "syscallid": 0,
+    "description": "Checks if kernel level debugger is enabled.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "KdDebuggerNotPresent": {
+    "syscallid": 0,
+    "description": "Check if kernel level debugger not present.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "KiUserDispatcher": {
+    "syscallid": 0,
+    "description": "PEB anti-debugging trick.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "KiUserExceptionDispatcher": {
+    "syscallid": 0,
+    "description": "Calling the user mode portion of the SEH dispatcher.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "__local__unwind3": {
+    "syscallid": 0,
+    "description": "unwinding a stack from within a running program.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "NtGetContextThread": {
+    "syscallid": 0,
+    "description": "Get Information on the current thread.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "NtGlobalFlags": {
+    "syscallid": 0,
+    "description": "Check presence of debugger - Anti-Debugging trick.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "NtQueryInformationProcess": {
+    "syscallid": 0,
+    "description": "Retrieves information about the specified process.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "NtSetContextThread": {
+    "syscallid": 0,
+    "description": "Clear the hardware breakpoints set by EMET on the Export Address Table of kernel32.dll and ntdll.dll.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "NtSetDebugFilterState": {
+    "syscallid": 0,
+    "description": "Determine if the process is debugged or not.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "NtSetInformationThread": {
+    "syscallid": 0,
+    "description": "This routine sets the priority of a thread.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "NtSetLdtEntries": {
+    "syscallid": 0,
+    "description": "Allocate a segment descriptor within the process' local descriptor table.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "NtSystemDebugControl": {
+    "syscallid": 0,
+    "description": "API used by some low-level debuggers.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "NtYieldExecution": {
+    "syscallid": 0,
+    "description": "Stop executing Calling thread, and switch to other running thread.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "OutputDebugString": {
+    "syscallid": 0,
+    "description": "Sends a string to the debugger for display.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "OutputDebugStringA": {
+    "syscallid": 0,
+    "description": "Sends a string to the debugger for display.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "OutputDebugStringW": {
+    "syscallid": 0,
+    "description": "Sends a string to the debugger for display.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "ProcessDebugObjectHandle": {
+    "syscallid": 0,
+    "description": "Retrieves information about the specified process.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "ProcessDebugPort": {
+    "syscallid": 0,
+    "description": "Get process debug information.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "ProcessInformationLength": {
+    "syscallid": 0,
+    "description": "Get process length information.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "QueryInformationProcess": {
+    "syscallid": 0,
+    "description": "Retrieves information about the specified process.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "QueryPerformanceCounter": {
+    "syscallid": 0,
+    "description": "Retrieves the current value of the performance counter.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "RemoveVectoredExceptionHandler": {
+    "syscallid": 0,
+    "description": "Unregisters a vectored exception handler.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "RtlQueryProcessDebugInformation": {
+    "syscallid": 0,
+    "description": "Anti-debugging trick-Windows Heap Enumeration.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "RtlQueryProcessHeapInformation": {
+    "syscallid": 0,
+    "description": "Anti-debugging trick-Windows Heap Enumeration.",
+    "type": ["antidebug"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "SeDebugPrivilege": {
+    "syscallid": 0,
+    "description": "Call TerminateProcess,CreateRemoteThread,and other potentially dangerous Win32 APIs.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "SetConsoleCtrlHandler": {
+    "syscallid": 0,
+    "description": "Adds or removes an application-defined HandlerRoutine function from the list of handler functions.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "SetInformationThread": {
+    "syscallid": 0,
+    "description": "Anti-Debugging-modify thread specific data for a targeted thread.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "SetThreadContext": {
+    "syscallid": 0,
+    "description": "Sets the context for the specified thread.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "SetUnhandledExceptionFilter": {
+    "syscallid": 0,
+    "description": "Enables to supersede the top-level exception handler of each thread of a process.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "SuspendThread": {
+    "syscallid": 0,
+    "description": "Suspends the specified thread.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "SysDbgQueryModuleInformation": {
+    "syscallid": 0,
+    "description": "Get Debugging information.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "SystemKernelDebuggerInformation": {
+    "syscallid": 0,
+    "description": "Detect if kernel debugger is currently being attached to the system.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "UnhandledExceptionFilter": {
+    "syscallid": 0,
+    "description": "Passes unhandled exceptions to the debugger.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "vbaExceptHandler": {
+    "syscallid": 0,
+    "description": "VB Exception handler.",
+    "type": ["antidebug"],
+    "parent": "msvbm60.dll",
+    "score": 0
+  },
+
+  "WaitForDebugEvent": {
+    "syscallid": 0,
+    "description": "Waits for a debugging event to occur in a process being debugged.",
+    "type": ["antidebug"],
+    "parent": "kernel32.dll",
+    "score": 0
+  },
+
+  "WinDbgFrameClass": {
+    "syscallid": 0,
+    "description": "Anti-Debugging trick, parameter to FindWindow for debugger existence.",
+    "type": ["antidebug"],
+    "parent": "user32.dll",
+    "score": 0
+  },
+
+  "__XcptFilter": {
+    "syscallid": 0,
+    "description": "Exception handler.",
+    "type": ["antidebug"],
+    "parent": "msvcr100.dll",
+    "score": 0
+  },
+
+  "ZwQueryInformationProcess": {
+    "syscallid": 0,
+    "description": "Retrieves information about the specified process.",
+    "type": ["antivm"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "ZwSetInformationThread": {
+    "syscallid": 0,
+    "description": "Sets the priority of a thread.",
+    "type": ["antivm"],
+    "parent": "ntdll.dll",
+    "score": 0
+  },
+
+  "accept": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "AddCredentials": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "bind": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "CertDeleteCertificateFromStore": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "CloseHandle": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "closesocket": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "connect": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "ConnectNamedPipe": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "CopyFile": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "CreateDirectory": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "CreateFile": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "CreateFileMapping": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "CreateThread": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "CryptEncrypt": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "DeleteFile": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "DisconnectNamedPipe": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "DNSQuery": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "EnumProcesses": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "ExitThread": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "FindFirstFile": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "FindNextFile": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "FindResource": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "FltRegisterFilter": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "FtpGetFile": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "GetCommandLine": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "GetComputerName": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "GetDriveType": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "GetFileSize": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "GetHostByAddr": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "GetHostByName": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "GetHostName": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "GetModuleFileName": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "GetModuleHandle": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "GetStartupInfo": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "GetSystemDirectory": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "GetTempFileName": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "GetTempPath": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "GetUpdateRect": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "GetUpdateRgn": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "GetUrlCacheEntryInfo": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "GetUserNameA": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "GetWindowsDirectory": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "HttpQueryInfo": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "IcmpSendEcho": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "InternetCloseHandle": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "InternetCrackUrl": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "InternetGetConnectedState": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "InternetOpen": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "InternetQueryDataAvailable": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "InternetQueryOption": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "InternetWriteFile": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "IsBadReadPtr": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "IsBadWritePtr": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "LdrLoadDll": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "listen": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "LoadLibrary": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "LockResource": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "MapViewOfFile": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "OpenFileMapping": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "ReadFile": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "recv": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "RegCloseKey": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "RegCreateKey": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "RegDeleteKey": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "RegDeleteValue": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "RegEnumKey": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "RegOpenKey": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "sendto": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "SetFilePointer": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "SetKeyboardState": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "SetWindowsHook": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "socket": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "URLDownload": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "WSASend": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  },
+
+  "WSASocket": {
+    "syscallid": null,
+    "description": "",
+      "type": ["suspicious"],
+      "parent": "",
+      "score": null
+  }
+}
