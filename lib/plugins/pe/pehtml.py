@@ -245,7 +245,7 @@ class pehtml(PluginInterface):
         htmldata += "%s\n" % (normalizeddata)
 
       # show PE authenticode details
-      if report.pe.static.authenticode.size:
+      if report.pe.static.authenticode and report.pe.static.authenticode.size:
         authenticodetab = PrettyTable(["Atrribute", "Value"])
         authenticodetab.border = borderflag
         authenticodetab.header = headerflag
