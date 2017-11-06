@@ -9,6 +9,7 @@
 /*.egg-info
 /*.egg
 
+env/
 misc/
 reports/
 TODO
