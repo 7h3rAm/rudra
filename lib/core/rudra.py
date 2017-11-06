@@ -192,6 +192,12 @@ class Rudra:
     self.save()
     print "Completed analysis on %s @ %s (Elapsed: %s)" % (filename, utils.time_to_local_string(timing.endtime), utils.elapsed_time_string(timing.elapsedtime))
 
+  # handle type errors in jsondumps
+  def cast(self, obj):
+    if isinstance(obj, bytearray):
+      return str(obj)
+    raise TypeError
+
   # save session report to a json and/or html file
   def save(self):
     if self.session.config.savereport:
@@ -202,7 +208,7 @@ class Rudra:
           self.session.report.meta.visual.pngrgb = utils.to_base64(self.session.report.meta.visual.pngrgb)
           self.session.report.meta.visual.identicon = utils.to_base64(self.session.report.meta.visual.identicon) if self.session.report.meta.visual.identicon else None
 
-        fileutils.file_save(filename="%s/%s.json" % (self.session.config.currreportpath, self.session.config.currreportfile), data=json.dumps(self.session.report, sort_keys=True, encoding="latin-1"))
+        fileutils.file_save(filename="%s/%s.json" % (self.session.config.currreportpath, self.session.config.currreportfile), data=json.dumps(self.session.report, default=self.cast, sort_keys=True, encoding="latin-1"))
         if self.session.config.verbose:
           utils.debug("Dumped reports to %s" % self.session.config.currreportpath)
       else:
